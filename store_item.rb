@@ -45,7 +45,7 @@ class Bat
 
 end
 
-bat1 = Bat.new(name: Gregory, color: black, type: friendly)
+bat1 = Bat.new name: "Gregory", color: "black", type: "friendly"
 # bat2 = Bat.new("Todd", "blackish", "stoic")
 # bat2 = Bat.new("Lacy", "brown", "noisy")
 
