@@ -37,4 +37,17 @@ class Bat
     @type
   end
 
+  def change_name(text)
+    @name=text
+  end
+
 end
+
+bat1 = Bat.new("Gregory", "black", "friendly")
+bat2 = Bat.new("Todd", "blackish", "stoic")
+bat2 = Bat.new("Lacy", "brown", "noisy")
+
+puts bat1.name
+puts bat1.color
+puts bat1.type
+
