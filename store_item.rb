@@ -21,10 +21,10 @@ class Bat
   attr_reader :name, :color, :type
   attr_writer :name
 
-  def initialize(name, color, type)
-    @name = name
-    @color = color
-    @type = type
+  def initialize(input_options)
+    @name = input_options[:name]
+    @color = input_options[:color]
+    @type = input_options[:type]
   end
 
   # def name
@@ -45,9 +45,9 @@ class Bat
 
 end
 
-bat1 = Bat.new("Gregory", "black", "friendly")
-bat2 = Bat.new("Todd", "blackish", "stoic")
-bat2 = Bat.new("Lacy", "brown", "noisy")
+bat1 = Bat.new(name: Gregory, color: black, type: friendly)
+# bat2 = Bat.new("Todd", "blackish", "stoic")
+# bat2 = Bat.new("Lacy", "brown", "noisy")
 
 #puts bat1.name
 puts bat1.color
