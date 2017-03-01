@@ -17,7 +17,7 @@
 # puts "#{bat3[:name]} is a #{bat3[:color]} bat is just too #{bat3[:type]}"
 
  
-class Bat
+class Bat 
   attr_reader :name, :color, :type
   attr_writer :name
 
